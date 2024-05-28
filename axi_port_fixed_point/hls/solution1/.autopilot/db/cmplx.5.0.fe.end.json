@@ -1,0 +1,65 @@
+{
+    "0": {
+        "name": "mem_streaming",
+        "file": "mem_streaming.cpp",
+        "fileloc": "4",
+        "instructions": "30",
+        "total_instructions": "196",
+        "calls": "1 3 2",
+        "basicblocks": "1"
+    },
+    "1": {
+        "name": "mem_streaming_Pipeline_VITIS_LOOP_9_1",
+        "file": "axi_port_fixed_point\/mem_streaming.cpp",
+        "fileloc": "15",
+        "instructions": "53",
+        "total_instructions": "53",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "1"
+        },
+        "stores": {
+            "L": "12"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "2": {
+        "name": "mem_streaming_Pipeline_VITIS_LOOP_25_1",
+        "file": "axi_port_fixed_point\/mem_streaming.cpp",
+        "fileloc": "24",
+        "instructions": "55",
+        "total_instructions": "55",
+        "calls": "",
+        "basicblocks": "4",
+        "loads": {
+            "L": "11"
+        },
+        "stores": {
+            "L": "2"
+        },
+        "loops": {
+            "L": "1"
+        }
+    },
+    "3": {
+        "name": "mem_streaming_Pipeline_VITIS_LOOP_40_1",
+        "file": "axi_port_fixed_point\/mem_streaming.cpp",
+        "fileloc": "20",
+        "instructions": "58",
+        "total_instructions": "58",
+        "calls": "",
+        "basicblocks": "10",
+        "loads": {
+            "L": "8"
+        },
+        "stores": {
+            "L": "11"
+        },
+        "loops": {
+            "L": "1"
+        }
+    }
+}

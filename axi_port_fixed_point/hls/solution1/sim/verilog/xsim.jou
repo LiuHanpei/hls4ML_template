@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# xsim v2023.2.1 (64-bit)
+# SW Build 4081461 on Thu Dec 14 12:24:51 MST 2023
+# IP Build 4080415 on Thu Dec 14 21:01:57 MST 2023
+# SharedData Build 4077621 on Mon Dec 11 00:23:44 MST 2023
+# Start of session at: Mon May 27 19:22:39 2024
+# Process ID: 38044
+# Current directory: F:/vivado_projects/hls_4ML/axi_port_fixed_point/solution1/sim/verilog
+# Command line: xsim.exe -mode tcl -source {xsim.dir/mem_streaming/xsim_script.tcl}
+# Log file: F:/vivado_projects/hls_4ML/axi_port_fixed_point/solution1/sim/verilog/xsim.log
+# Journal file: F:/vivado_projects/hls_4ML/axi_port_fixed_point/solution1/sim/verilog\xsim.jou
+# Running On: Lihanni, OS: Windows, CPU Frequency: 3187 MHz, CPU Physical cores: 12, Host memory: 34070 MB
+#-----------------------------------------------------------
+source xsim.dir/mem_streaming/xsim_script.tcl
+source mem_streaming.tcl

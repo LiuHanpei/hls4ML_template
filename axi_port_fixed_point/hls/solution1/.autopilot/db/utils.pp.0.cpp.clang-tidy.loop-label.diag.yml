@@ -1,0 +1,94 @@
+---
+MainSourceFile:  'F:/vivado_projects/hls_4ML/axi_port_fixed_point/solution1/.autopilot/db/utils.pp.0.cpp'
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1207_1:  '
+    FileOffset:      1207
+    FilePath:        'E:\Vivado\Vitis_HLS\2023.2\common\technology\autopilot\etc\ap_int_base.h'
+    Replacements:    
+      - FilePath:        'F:\vivado_projects\hls_4ML\axi_port_fixed_point\solution1\.autopilot\db\utils.pp.0.cpp'
+        Offset:          911645
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1207_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_676_1:  '
+    FileOffset:      676
+    FilePath:        'E:\Vivado\Vitis_HLS\2023.2\common\technology\autopilot\etc\ap_int_ref.h'
+    Replacements:    
+      - FilePath:        'F:\vivado_projects\hls_4ML\axi_port_fixed_point\solution1\.autopilot\db\utils.pp.0.cpp'
+        Offset:          1138969
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_676_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_690_1:  '
+    FileOffset:      690
+    FilePath:        'E:\Vivado\Vitis_HLS\2023.2\common\technology\autopilot\etc\ap_int_ref.h'
+    Replacements:    
+      - FilePath:        'F:\vivado_projects\hls_4ML\axi_port_fixed_point\solution1\.autopilot\db\utils.pp.0.cpp'
+        Offset:          1139433
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_690_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_704_1:  '
+    FileOffset:      704
+    FilePath:        'E:\Vivado\Vitis_HLS\2023.2\common\technology\autopilot\etc\ap_int_ref.h'
+    Replacements:    
+      - FilePath:        'F:\vivado_projects\hls_4ML\axi_port_fixed_point\solution1\.autopilot\db\utils.pp.0.cpp'
+        Offset:          1139898
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_704_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1247_1:  '
+    FileOffset:      1247
+    FilePath:        'E:\Vivado\Vitis_HLS\2023.2\common\technology\autopilot\etc\ap_fixed_base.h'
+    Replacements:    
+      - FilePath:        'F:\vivado_projects\hls_4ML\axi_port_fixed_point\solution1\.autopilot\db\utils.pp.0.cpp'
+        Offset:          1422784
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1247_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_9_1:  '
+    FileOffset:      9
+    FilePath:        'F:\vivado_projects\hls_4ML\axi_port_fixed_point\utils.cpp'
+    Replacements:    
+      - FilePath:        'F:\vivado_projects\hls_4ML\axi_port_fixed_point\solution1\.autopilot\db\utils.pp.0.cpp'
+        Offset:          1821616
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_9_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_12_2:  '
+    FileOffset:      12
+    FilePath:        'F:\vivado_projects\hls_4ML\axi_port_fixed_point\utils.cpp'
+    Replacements:    
+      - FilePath:        'F:\vivado_projects\hls_4ML\axi_port_fixed_point\solution1\.autopilot\db\utils.pp.0.cpp'
+        Offset:          1821678
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_12_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_25_1:  '
+    FileOffset:      25
+    FilePath:        'F:\vivado_projects\hls_4ML\axi_port_fixed_point\utils.cpp'
+    Replacements:    
+      - FilePath:        'F:\vivado_projects\hls_4ML\axi_port_fixed_point\solution1\.autopilot\db\utils.pp.0.cpp'
+        Offset:          1821863
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_25_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_28_2:  '
+    FileOffset:      28
+    FilePath:        'F:\vivado_projects\hls_4ML\axi_port_fixed_point\utils.cpp'
+    Replacements:    
+      - FilePath:        'F:\vivado_projects\hls_4ML\axi_port_fixed_point\solution1\.autopilot\db\utils.pp.0.cpp'
+        Offset:          1821916
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_28_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_40_1:  '
+    FileOffset:      40
+    FilePath:        'F:\vivado_projects\hls_4ML\axi_port_fixed_point\utils.cpp'
+    Replacements:    
+      - FilePath:        'F:\vivado_projects\hls_4ML\axi_port_fixed_point\solution1\.autopilot\db\utils.pp.0.cpp'
+        Offset:          1822096
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_40_1: '
+...
