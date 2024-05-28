@@ -1,0 +1,45 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="F:/vivado_projects/hls_4ML/axi_port_fixed_point/solution1/csynth.tcl:19:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="mem_streaming" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=mem_streaming" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="axi_port_fixed_point/mem_streaming.cpp:9:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mem_streaming" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=data_in offset=slave bundle=in" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="axi_port_fixed_point/mem_streaming.cpp:10:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mem_streaming" ARG_PragmaIsValid="1" ARG_PragmaOptions="m_axi port=data_out offset=slave bundle=out" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-5471" msg_severity="WARNING" msg_loc="axi_port_fixed_point/mem_streaming.cpp:11:9" msg_body="HLS pragma dump">
+        <args ARG_PragmaFunction="mem_streaming" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite register port=return" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="axi_port_fixed_point/mem_streaming.cpp:8:0" msg_body="Inlining function 'load_data(ap_fixed&lt;16, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_uint&lt;160&gt;*)' into 'mem_streaming(ap_uint&lt;160&gt;*, ap_uint&lt;160&gt;*)'">
+        <args Callee="load_data(ap_fixed&lt;16, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*, ap_uint&lt;160&gt;*)" Callee-DebugLoc="File axi_port_fixed_point/utils.cpp Line 8 Column 0" Caller="mem_streaming(ap_uint&lt;160&gt;*, ap_uint&lt;160&gt;*)" Caller-DebugLoc="File axi_port_fixed_point/mem_streaming.cpp Line 8 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="axi_port_fixed_point/mem_streaming.cpp:8:0" msg_body="Inlining function 'data_process(ap_fixed&lt;16, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)' into 'mem_streaming(ap_uint&lt;160&gt;*, ap_uint&lt;160&gt;*)'">
+        <args Callee="data_process(ap_fixed&lt;16, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)" Callee-DebugLoc="File axi_port_fixed_point/utils.cpp Line 39 Column 0" Caller="mem_streaming(ap_uint&lt;160&gt;*, ap_uint&lt;160&gt;*)" Caller-DebugLoc="File axi_port_fixed_point/mem_streaming.cpp Line 8 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="axi_port_fixed_point/mem_streaming.cpp:8:0" msg_body="Inlining function 'send_data(ap_uint&lt;160&gt;*, ap_fixed&lt;16, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)' into 'mem_streaming(ap_uint&lt;160&gt;*, ap_uint&lt;160&gt;*)'">
+        <args Callee="send_data(ap_uint&lt;160&gt;*, ap_fixed&lt;16, 4, (ap_q_mode)5, (ap_o_mode)3, 0&gt;*)" Callee-DebugLoc="File axi_port_fixed_point/utils.cpp Line 24 Column 0" Caller="mem_streaming(ap_uint&lt;160&gt;*, ap_uint&lt;160&gt;*)" Caller-DebugLoc="File axi_port_fixed_point/mem_streaming.cpp Line 8 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="axi_port_fixed_point/utils.cpp:28:20" msg_body="Loop 'VITIS_LOOP_28_2' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_28_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="axi_port_fixed_point/utils.cpp:12:20" msg_body="Loop 'VITIS_LOOP_12_2' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_12_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="axi_port_fixed_point/mem_streaming.cpp:8:0" msg_body="Unrolling loop 'VITIS_LOOP_28_2' (axi_port_fixed_point/utils.cpp:28:20) in function 'mem_streaming' completely with a factor of 10">
+        <args Factor="10" LoopLoc="axi_port_fixed_point/utils.cpp:28:20" LoopName="VITIS_LOOP_28_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="axi_port_fixed_point/mem_streaming.cpp:8:0" msg_body="Unrolling loop 'VITIS_LOOP_12_2' (axi_port_fixed_point/utils.cpp:12:20) in function 'mem_streaming' completely with a factor of 10">
+        <args Factor="10" LoopLoc="axi_port_fixed_point/utils.cpp:12:20" LoopName="VITIS_LOOP_12_2"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="axi_port_fixed_point/mem_streaming.cpp:13:7" msg_body="array_partition dim=1 type=cyclic factor=5 variable=data_buf 1 mem_streaming axi_port_fixed_point/mem_streaming.cpp:13:7 data_buf">
+        <args PragmaFunction="mem_streaming" PragmaIsAuto="1" PragmaOptions="dim=1 type=cyclic factor=5 variable=data_buf" PragmaType="array_partition" VarName="data_buf" varLoc="axi_port_fixed_point/mem_streaming.cpp:13:7"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="axi_port_fixed_point/mem_streaming.cpp:13:7" msg_body="Inferring pragma 'array_partition type=cyclic factor=5 dim=1' for array 'data_buf' due to pipeline pragma">
+        <args Dim="1" Factor="5" Mode="cyclic" Name="data_buf" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="axi_port_fixed_point/mem_streaming.cpp:13:7" msg_body="Applying array_partition to 'data_buf': Cyclic partitioning with factor 5 on dimension 1.">
+        <args Dim="1" Factor="5" Mode="Cyclic" UOName="data_buf"/>
+    </msg>
+</xilinx:hls_fe_msgs>
+

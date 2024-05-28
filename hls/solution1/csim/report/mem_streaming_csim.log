@@ -1,0 +1,57 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../mem_streaming.cpp in debug mode
+   Compiling ../../../utils.cpp in debug mode
+   Generating csim.exe
+result_verify: data_out[0]:0
+result_verify: data_out[1]:0.0498047
+result_verify: data_out[2]:0.0998535
+result_verify: data_out[3]:0.149658
+result_verify: data_out[4]:0.199707
+result_verify: data_out[5]:0.249512
+result_verify: data_out[6]:0.299561
+result_verify: data_out[7]:0.349365
+result_verify: data_out[8]:0.399414
+result_verify: data_out[9]:0.449219
+result_verify: data_out[10]:0.499268
+result_verify: data_out[11]:0.549072
+result_verify: data_out[12]:0.599121
+result_verify: data_out[13]:0.648926
+result_verify: data_out[14]:0.698975
+result_verify: data_out[15]:0.748779
+result_verify: data_out[16]:0.798828
+result_verify: data_out[17]:0.848633
+result_verify: data_out[18]:0.898682
+result_verify: data_out[19]:0.948486
+result_verify: data_out[20]:0.998535
+result_verify: data_out[21]:1.04834
+result_verify: data_out[22]:1.09839
+result_verify: data_out[23]:1.14819
+result_verify: data_out[24]:1.19824
+result_verify: data_out[25]:1.24805
+result_verify: data_out[26]:1.2981
+result_verify: data_out[27]:1.3479
+result_verify: data_out[28]:1.39795
+result_verify: data_out[29]:1.44775
+result_verify: data_out[30]:1.4978
+result_verify: data_out[31]:1.54761
+result_verify: data_out[32]:1.59766
+result_verify: data_out[33]:1.64746
+result_verify: data_out[34]:1.69751
+result_verify: data_out[35]:1.74731
+result_verify: data_out[36]:1.79736
+result_verify: data_out[37]:1.84717
+result_verify: data_out[38]:1.89722
+result_verify: data_out[39]:1.94702
+result_verify: data_out[40]:1.99707
+result_verify: data_out[41]:2.04688
+result_verify: data_out[42]:2.09692
+result_verify: data_out[43]:2.14673
+result_verify: data_out[44]:2.19678
+result_verify: data_out[45]:2.24658
+result_verify: data_out[46]:2.29663
+result_verify: data_out[47]:2.34644
+result_verify: data_out[48]:2.39648
+result_verify: data_out[49]:2.44629
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

@@ -1,0 +1,17 @@
+{
+  "0": {
+    "basicblocks": 33,
+    "calls": "",
+    "file": "mem_streaming.cpp",
+    "fileloc": 4,
+    "instructions": 460,
+    "loads": {
+      "L": 15
+    },
+    "name": "mem_streaming",
+    "stores": {
+      "L": 15
+    },
+    "total_instructions": 460
+  }
+}

@@ -1,0 +1,297 @@
+
+
+================================================================
+== Vitis HLS Report for 'mem_streaming'
+================================================================
+* Date:           Mon May 27 19:22:01 2024
+
+* Version:        2023.2.1 (Build 4070103 on Dec 13 2023)
+* Project:        axi_port_fixed_point
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xczu9eg-ffvb1156-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.300 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |       87|       87|  0.870 us|  0.870 us|   88|   88|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 20
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 8 
+8 --> 9 
+9 --> 10 
+10 --> 11 
+11 --> 12 
+12 --> 13 
+13 --> 14 
+14 --> 15 
+15 --> 16 
+16 --> 17 
+17 --> 18 
+18 --> 19 
+19 --> 20 
+20 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.00>
+ST_1 : Operation 21 [1/1] (1.00ns)   --->   "%data_in_read = read i64 @_ssdm_op_Read.s_axilite.i64, i64 %data_in"   --->   Operation 21 'read' 'data_in_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 122 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 22 [1/1] (1.00ns)   --->   "%data_out_read = read i64 @_ssdm_op_Read.s_axilite.i64, i64 %data_out"   --->   Operation 22 'read' 'data_out_read' <Predicate = true> <Delay = 1.00> <CoreInst = "s_axilite">   --->   Core 122 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%data_buf = alloca i64 1" [axi_port_fixed_point/mem_streaming.cpp:13]   --->   Operation 23 'alloca' 'data_buf' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "%data_buf_1 = alloca i64 1" [axi_port_fixed_point/mem_streaming.cpp:13]   --->   Operation 24 'alloca' 'data_buf_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%data_buf_2 = alloca i64 1" [axi_port_fixed_point/mem_streaming.cpp:13]   --->   Operation 25 'alloca' 'data_buf_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 26 [1/1] (0.00ns)   --->   "%data_buf_3 = alloca i64 1" [axi_port_fixed_point/mem_streaming.cpp:13]   --->   Operation 26 'alloca' 'data_buf_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 27 [1/1] (0.00ns)   --->   "%data_buf_4 = alloca i64 1" [axi_port_fixed_point/mem_streaming.cpp:13]   --->   Operation 27 'alloca' 'data_buf_4' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 28 [1/1] (0.00ns)   --->   "%trunc_ln9 = partselect i59 @_ssdm_op_PartSelect.i59.i64.i32.i32, i64 %data_in_read, i32 5, i32 63" [axi_port_fixed_point/utils.cpp:9->axi_port_fixed_point/mem_streaming.cpp:15]   --->   Operation 28 'partselect' 'trunc_ln9' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 29 [1/1] (0.00ns)   --->   "%trunc_ln = partselect i59 @_ssdm_op_PartSelect.i59.i64.i32.i32, i64 %data_out_read, i32 5, i32 63" [axi_port_fixed_point/utils.cpp:25->axi_port_fixed_point/mem_streaming.cpp:24]   --->   Operation 29 'partselect' 'trunc_ln' <Predicate = true> <Delay = 0.00>
+
+State 2 <SV = 1> <Delay = 7.30>
+ST_2 : Operation 30 [1/1] (0.00ns)   --->   "%sext_ln9 = sext i59 %trunc_ln9" [axi_port_fixed_point/utils.cpp:9->axi_port_fixed_point/mem_streaming.cpp:15]   --->   Operation 30 'sext' 'sext_ln9' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 31 [1/1] (0.00ns)   --->   "%in_r_addr = getelementptr i256 %in_r, i64 %sext_ln9" [axi_port_fixed_point/utils.cpp:9->axi_port_fixed_point/mem_streaming.cpp:15]   --->   Operation 31 'getelementptr' 'in_r_addr' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 32 [8/8] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i256, i256 %in_r_addr, i32 5" [axi_port_fixed_point/utils.cpp:9->axi_port_fixed_point/mem_streaming.cpp:15]   --->   Operation 32 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 3 <SV = 2> <Delay = 7.30>
+ST_3 : Operation 33 [7/8] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i256, i256 %in_r_addr, i32 5" [axi_port_fixed_point/utils.cpp:9->axi_port_fixed_point/mem_streaming.cpp:15]   --->   Operation 33 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 4 <SV = 3> <Delay = 7.30>
+ST_4 : Operation 34 [6/8] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i256, i256 %in_r_addr, i32 5" [axi_port_fixed_point/utils.cpp:9->axi_port_fixed_point/mem_streaming.cpp:15]   --->   Operation 34 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 5 <SV = 4> <Delay = 7.30>
+ST_5 : Operation 35 [5/8] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i256, i256 %in_r_addr, i32 5" [axi_port_fixed_point/utils.cpp:9->axi_port_fixed_point/mem_streaming.cpp:15]   --->   Operation 35 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 6 <SV = 5> <Delay = 7.30>
+ST_6 : Operation 36 [4/8] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i256, i256 %in_r_addr, i32 5" [axi_port_fixed_point/utils.cpp:9->axi_port_fixed_point/mem_streaming.cpp:15]   --->   Operation 36 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 7 <SV = 6> <Delay = 7.30>
+ST_7 : Operation 37 [3/8] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i256, i256 %in_r_addr, i32 5" [axi_port_fixed_point/utils.cpp:9->axi_port_fixed_point/mem_streaming.cpp:15]   --->   Operation 37 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 8 <SV = 7> <Delay = 7.30>
+ST_8 : Operation 38 [2/8] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i256, i256 %in_r_addr, i32 5" [axi_port_fixed_point/utils.cpp:9->axi_port_fixed_point/mem_streaming.cpp:15]   --->   Operation 38 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 9 <SV = 8> <Delay = 7.30>
+ST_9 : Operation 39 [1/8] (7.30ns)   --->   "%empty = readreq i1 @_ssdm_op_ReadReq.m_axi.p1i256, i256 %in_r_addr, i32 5" [axi_port_fixed_point/utils.cpp:9->axi_port_fixed_point/mem_streaming.cpp:15]   --->   Operation 39 'readreq' 'empty' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 10 <SV = 9> <Delay = 0.00>
+ST_10 : Operation 40 [2/2] (0.00ns)   --->   "%call_ln9 = call void @mem_streaming_Pipeline_VITIS_LOOP_9_1, i256 %in_r, i59 %trunc_ln9, i16 %data_buf, i16 %data_buf_1, i16 %data_buf_2, i16 %data_buf_3, i16 %data_buf_4" [axi_port_fixed_point/utils.cpp:9->axi_port_fixed_point/mem_streaming.cpp:15]   --->   Operation 40 'call' 'call_ln9' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 11 <SV = 10> <Delay = 0.00>
+ST_11 : Operation 41 [1/2] (0.00ns)   --->   "%call_ln9 = call void @mem_streaming_Pipeline_VITIS_LOOP_9_1, i256 %in_r, i59 %trunc_ln9, i16 %data_buf, i16 %data_buf_1, i16 %data_buf_2, i16 %data_buf_3, i16 %data_buf_4" [axi_port_fixed_point/utils.cpp:9->axi_port_fixed_point/mem_streaming.cpp:15]   --->   Operation 41 'call' 'call_ln9' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 12 <SV = 11> <Delay = 0.00>
+ST_12 : Operation 42 [2/2] (0.00ns)   --->   "%call_ln0 = call void @mem_streaming_Pipeline_VITIS_LOOP_40_1, i16 %data_buf_4, i16 %data_buf_3, i16 %data_buf_2, i16 %data_buf_1, i16 %data_buf"   --->   Operation 42 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 13 <SV = 12> <Delay = 7.30>
+ST_13 : Operation 43 [1/2] (0.00ns)   --->   "%call_ln0 = call void @mem_streaming_Pipeline_VITIS_LOOP_40_1, i16 %data_buf_4, i16 %data_buf_3, i16 %data_buf_2, i16 %data_buf_1, i16 %data_buf"   --->   Operation 43 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_13 : Operation 44 [1/1] (0.00ns)   --->   "%sext_ln25 = sext i59 %trunc_ln" [axi_port_fixed_point/utils.cpp:25->axi_port_fixed_point/mem_streaming.cpp:24]   --->   Operation 44 'sext' 'sext_ln25' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 45 [1/1] (0.00ns)   --->   "%out_r_addr = getelementptr i256 %out_r, i64 %sext_ln25" [axi_port_fixed_point/utils.cpp:25->axi_port_fixed_point/mem_streaming.cpp:24]   --->   Operation 45 'getelementptr' 'out_r_addr' <Predicate = true> <Delay = 0.00>
+ST_13 : Operation 46 [1/1] (7.30ns)   --->   "%empty_30 = writereq i1 @_ssdm_op_WriteReq.m_axi.p1i256, i256 %out_r_addr, i32 5" [axi_port_fixed_point/utils.cpp:25->axi_port_fixed_point/mem_streaming.cpp:24]   --->   Operation 46 'writereq' 'empty_30' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 14 <SV = 13> <Delay = 0.00>
+ST_14 : Operation 47 [2/2] (0.00ns)   --->   "%call_ln25 = call void @mem_streaming_Pipeline_VITIS_LOOP_25_1, i256 %out_r, i59 %trunc_ln, i16 %data_buf, i16 %data_buf_1, i16 %data_buf_2, i16 %data_buf_3, i16 %data_buf_4" [axi_port_fixed_point/utils.cpp:25->axi_port_fixed_point/mem_streaming.cpp:24]   --->   Operation 47 'call' 'call_ln25' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 15 <SV = 14> <Delay = 0.00>
+ST_15 : Operation 48 [1/2] (0.00ns)   --->   "%call_ln25 = call void @mem_streaming_Pipeline_VITIS_LOOP_25_1, i256 %out_r, i59 %trunc_ln, i16 %data_buf, i16 %data_buf_1, i16 %data_buf_2, i16 %data_buf_3, i16 %data_buf_4" [axi_port_fixed_point/utils.cpp:25->axi_port_fixed_point/mem_streaming.cpp:24]   --->   Operation 48 'call' 'call_ln25' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 16 <SV = 15> <Delay = 7.30>
+ST_16 : Operation 49 [5/5] (7.30ns)   --->   "%empty_31 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i256, i256 %out_r_addr" [axi_port_fixed_point/mem_streaming.cpp:28]   --->   Operation 49 'writeresp' 'empty_31' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 17 <SV = 16> <Delay = 7.30>
+ST_17 : Operation 50 [4/5] (7.30ns)   --->   "%empty_31 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i256, i256 %out_r_addr" [axi_port_fixed_point/mem_streaming.cpp:28]   --->   Operation 50 'writeresp' 'empty_31' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 18 <SV = 17> <Delay = 7.30>
+ST_18 : Operation 51 [3/5] (7.30ns)   --->   "%empty_31 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i256, i256 %out_r_addr" [axi_port_fixed_point/mem_streaming.cpp:28]   --->   Operation 51 'writeresp' 'empty_31' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 19 <SV = 18> <Delay = 7.30>
+ST_19 : Operation 52 [2/5] (7.30ns)   --->   "%empty_31 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i256, i256 %out_r_addr" [axi_port_fixed_point/mem_streaming.cpp:28]   --->   Operation 52 'writeresp' 'empty_31' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+
+State 20 <SV = 19> <Delay = 7.30>
+ST_20 : Operation 53 [1/1] (0.00ns)   --->   "%spectopmodule_ln4 = spectopmodule void @_ssdm_op_SpecTopModule, void @empty_10" [axi_port_fixed_point/mem_streaming.cpp:4]   --->   Operation 53 'spectopmodule' 'spectopmodule_ln4' <Predicate = true> <Delay = 0.00>
+ST_20 : Operation 54 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i256 %out_r, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_1, void @empty_2, void @empty_0, i32 16, i32 16, i32 16, i32 16, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 54 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_20 : Operation 55 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i256 %out_r"   --->   Operation 55 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_20 : Operation 56 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i256 %in_r, void @empty, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_3, void @empty_2, void @empty_0, i32 16, i32 16, i32 16, i32 16, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 56 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_20 : Operation 57 [1/1] (0.00ns)   --->   "%specbitsmap_ln0 = specbitsmap void @_ssdm_op_SpecBitsMap, i256 %in_r"   --->   Operation 57 'specbitsmap' 'specbitsmap_ln0' <Predicate = true> <Delay = 0.00>
+ST_20 : Operation 58 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %data_out, void @empty_4, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_5, void @empty_6, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_7, i32 4294967295, i32 0"   --->   Operation 58 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_20 : Operation 59 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %data_out, void @empty_8, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_7, i32 4294967295, i32 0"   --->   Operation 59 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_20 : Operation 60 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %data_in, void @empty_4, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_5, void @empty_9, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_7, i32 4294967295, i32 0"   --->   Operation 60 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_20 : Operation 61 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i64 %data_in, void @empty_8, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_7, i32 4294967295, i32 0"   --->   Operation 61 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_20 : Operation 62 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 0, void @empty_4, i32 0, i32 0, void @empty_0, i32 0, i32 0, void @empty_5, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0"   --->   Operation 62 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_20 : Operation 63 [1/5] (7.30ns)   --->   "%empty_31 = writeresp i1 @_ssdm_op_WriteResp.m_axi.p1i256, i256 %out_r_addr" [axi_port_fixed_point/mem_streaming.cpp:28]   --->   Operation 63 'writeresp' 'empty_31' <Predicate = true> <Delay = 7.30> <CoreInst = "m_axi">   --->   Core 121 'm_axi' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write' 'readreq' 'writereq' 'writeresp'>
+ST_20 : Operation 64 [1/1] (0.00ns)   --->   "%ret_ln28 = ret" [axi_port_fixed_point/mem_streaming.cpp:28]   --->   Operation 64 'ret' 'ret_ln28' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 1.000ns
+The critical path consists of the following:
+	s_axi read operation ('data_in_read') on port 'data_in' [15]  (1.000 ns)
+
+ <State 2>: 7.300ns
+The critical path consists of the following:
+	'getelementptr' operation 256 bit ('in_r_addr', axi_port_fixed_point/utils.cpp:9->axi_port_fixed_point/mem_streaming.cpp:15) [24]  (0.000 ns)
+	bus request operation ('empty', axi_port_fixed_point/utils.cpp:9->axi_port_fixed_point/mem_streaming.cpp:15) on port 'in_r' (axi_port_fixed_point/utils.cpp:9->axi_port_fixed_point/mem_streaming.cpp:15) [25]  (7.300 ns)
+
+ <State 3>: 7.300ns
+The critical path consists of the following:
+	bus request operation ('empty', axi_port_fixed_point/utils.cpp:9->axi_port_fixed_point/mem_streaming.cpp:15) on port 'in_r' (axi_port_fixed_point/utils.cpp:9->axi_port_fixed_point/mem_streaming.cpp:15) [25]  (7.300 ns)
+
+ <State 4>: 7.300ns
+The critical path consists of the following:
+	bus request operation ('empty', axi_port_fixed_point/utils.cpp:9->axi_port_fixed_point/mem_streaming.cpp:15) on port 'in_r' (axi_port_fixed_point/utils.cpp:9->axi_port_fixed_point/mem_streaming.cpp:15) [25]  (7.300 ns)
+
+ <State 5>: 7.300ns
+The critical path consists of the following:
+	bus request operation ('empty', axi_port_fixed_point/utils.cpp:9->axi_port_fixed_point/mem_streaming.cpp:15) on port 'in_r' (axi_port_fixed_point/utils.cpp:9->axi_port_fixed_point/mem_streaming.cpp:15) [25]  (7.300 ns)
+
+ <State 6>: 7.300ns
+The critical path consists of the following:
+	bus request operation ('empty', axi_port_fixed_point/utils.cpp:9->axi_port_fixed_point/mem_streaming.cpp:15) on port 'in_r' (axi_port_fixed_point/utils.cpp:9->axi_port_fixed_point/mem_streaming.cpp:15) [25]  (7.300 ns)
+
+ <State 7>: 7.300ns
+The critical path consists of the following:
+	bus request operation ('empty', axi_port_fixed_point/utils.cpp:9->axi_port_fixed_point/mem_streaming.cpp:15) on port 'in_r' (axi_port_fixed_point/utils.cpp:9->axi_port_fixed_point/mem_streaming.cpp:15) [25]  (7.300 ns)
+
+ <State 8>: 7.300ns
+The critical path consists of the following:
+	bus request operation ('empty', axi_port_fixed_point/utils.cpp:9->axi_port_fixed_point/mem_streaming.cpp:15) on port 'in_r' (axi_port_fixed_point/utils.cpp:9->axi_port_fixed_point/mem_streaming.cpp:15) [25]  (7.300 ns)
+
+ <State 9>: 7.300ns
+The critical path consists of the following:
+	bus request operation ('empty', axi_port_fixed_point/utils.cpp:9->axi_port_fixed_point/mem_streaming.cpp:15) on port 'in_r' (axi_port_fixed_point/utils.cpp:9->axi_port_fixed_point/mem_streaming.cpp:15) [25]  (7.300 ns)
+
+ <State 10>: 0.000ns
+The critical path consists of the following:
+
+ <State 11>: 0.000ns
+The critical path consists of the following:
+
+ <State 12>: 0.000ns
+The critical path consists of the following:
+
+ <State 13>: 7.300ns
+The critical path consists of the following:
+	'getelementptr' operation 256 bit ('out_r_addr', axi_port_fixed_point/utils.cpp:25->axi_port_fixed_point/mem_streaming.cpp:24) [30]  (0.000 ns)
+	bus request operation ('empty_30', axi_port_fixed_point/utils.cpp:25->axi_port_fixed_point/mem_streaming.cpp:24) on port 'out_r' (axi_port_fixed_point/utils.cpp:25->axi_port_fixed_point/mem_streaming.cpp:24) [31]  (7.300 ns)
+
+ <State 14>: 0.000ns
+The critical path consists of the following:
+
+ <State 15>: 0.000ns
+The critical path consists of the following:
+
+ <State 16>: 7.300ns
+The critical path consists of the following:
+	bus response operation ('empty_31', axi_port_fixed_point/mem_streaming.cpp:28) on port 'out_r' (axi_port_fixed_point/mem_streaming.cpp:28) [33]  (7.300 ns)
+
+ <State 17>: 7.300ns
+The critical path consists of the following:
+	bus response operation ('empty_31', axi_port_fixed_point/mem_streaming.cpp:28) on port 'out_r' (axi_port_fixed_point/mem_streaming.cpp:28) [33]  (7.300 ns)
+
+ <State 18>: 7.300ns
+The critical path consists of the following:
+	bus response operation ('empty_31', axi_port_fixed_point/mem_streaming.cpp:28) on port 'out_r' (axi_port_fixed_point/mem_streaming.cpp:28) [33]  (7.300 ns)
+
+ <State 19>: 7.300ns
+The critical path consists of the following:
+	bus response operation ('empty_31', axi_port_fixed_point/mem_streaming.cpp:28) on port 'out_r' (axi_port_fixed_point/mem_streaming.cpp:28) [33]  (7.300 ns)
+
+ <State 20>: 7.300ns
+The critical path consists of the following:
+	bus response operation ('empty_31', axi_port_fixed_point/mem_streaming.cpp:28) on port 'out_r' (axi_port_fixed_point/mem_streaming.cpp:28) [33]  (7.300 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+	State 17
+	State 18
+	State 19
+	State 20
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

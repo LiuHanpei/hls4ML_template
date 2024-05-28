@@ -1,0 +1,56 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "2 3 1",
+    "file": "mem_streaming.cpp",
+    "fileloc": 4,
+    "instructions": 11,
+    "name": "mem_streaming",
+    "total_instructions": 91
+  },
+  "1": {
+    "basicblocks": 7,
+    "calls": "",
+    "file": "utils.cpp",
+    "fileloc": 20,
+    "instructions": 29,
+    "loads": {
+      "L": 1
+    },
+    "name": "send_data",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 29
+  },
+  "2": {
+    "basicblocks": 7,
+    "calls": "",
+    "file": "utils.cpp",
+    "fileloc": 4,
+    "instructions": 26,
+    "loads": {
+      "L": 1
+    },
+    "name": "load_data",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 26
+  },
+  "3": {
+    "basicblocks": 9,
+    "calls": "",
+    "file": "utils.cpp",
+    "fileloc": 36,
+    "instructions": 25,
+    "loads": {
+      "L": 1
+    },
+    "name": "data_process",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 25
+  }
+}
